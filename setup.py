@@ -13,7 +13,7 @@ with open("README.txt") as file:
 
 setup(
     name = "btc-price-notifier",
-    version = "0.0.1a2",
+    version = "0.0.1a5",
     author = "MuChu Hsu",
     author_email = "muchu1983@gmail.com",
     maintainer = "MuChu Hsu",
