@@ -1,0 +1,7 @@
+開發使用的 python 版本
+3.6.4 (64-bit)
+
+使用 pip 安裝的第三方庫
+python -m pip install twine
+python -m pip install PyInstaller
+python -m pip install selenium
