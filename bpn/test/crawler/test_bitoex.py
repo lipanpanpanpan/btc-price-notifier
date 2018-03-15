@@ -29,6 +29,10 @@ class CurrentPriceChartsTest(unittest.TestCase):
     def test_runCrawler(self):
         logging.info("CurrentPriceChartsTest.test_runCrawler")
         self.crawler.runCrawler()
+        self.assertIsInstance(self.crawler.intCurrentBuyingPrice, int)
+        self.assertIsInstance(self.crawler.intCurrentSellingPrice, int)
+        self.assertGreater(self.crawler.intCurrentBuyingPrice, 0)
+        self.assertGreater(self.crawler.intCurrentSellingPrice, 0)
 
 #測試開始
 if __name__ == "__main__":
