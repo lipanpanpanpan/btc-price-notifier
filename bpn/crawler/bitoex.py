@@ -49,11 +49,11 @@ class CurrentPriceCharts:
     #執行 crawler
     def runCrawler(self):
         self.initDriver() #init selenium driver
-        self.getBuyingAndSellingPrice()
+        self.getCurrentBuyingAndSellingPrice()
         self.quitDriver() #quit selenium driver
     
-    #取得買價與賣價
-    def getBuyingAndSellingPrice(self):
+    #取得買賣現價
+    def getCurrentBuyingAndSellingPrice(self):
         self.driver.get("https://www.bitoex.com/charts?locale=zh-tw")
         time.sleep(random.randint(5, 10))
         strCurrentBuyingPrice = self.driver.find_element_by_css_selector("div.buy h4.sync_rate_buy span").text
